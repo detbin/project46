@@ -1,0 +1,35 @@
+.contenedor{
+    display:flex;
+    background-color: brown;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:stretch;
+}
+.contenedor1 {
+    background-color: blue;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.contenedor2 {
+    background-color: blueviolet;
+    width: 40vw;
+    display: flex;
+    flex-grow: 2;
+    
+}
+
+@media screen and (min-width:640px) {
+    .contenedor1{
+        flex-direction:row;
+        width: 100vw;
+    }
+    .contenedor{
+        flex-direction:column-reverse;
+     }
+     .contenedor2{
+        width: 100vw;
+     }
+}
